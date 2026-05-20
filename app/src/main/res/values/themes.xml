@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Calculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/btn_operator</item>
+        <item name="colorPrimaryVariant">@color/btn_operator</item>
+        <item name="colorOnPrimary">@color/btn_operator_text</item>
+        <item name="android:windowBackground">@color/bg_screen</item>
+        <item name="android:statusBarColor">@color/bg_screen</item>
+        <item name="android:navigationBarColor">@color/bg_screen</item>
+    </style>
+
+    <!-- Base: width=0dp + weight fills horizontal space; height=match_parent fills the row -->
+    <style name="Btn.Base" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Btn.Number" parent="Btn.Base">
+        <item name="backgroundTint">@color/btn_number</item>
+        <item name="android:textColor">@color/btn_number_text</item>
+    </style>
+
+    <style name="Btn.Function" parent="Btn.Base">
+        <item name="backgroundTint">@color/btn_function</item>
+        <item name="android:textColor">@color/btn_function_text</item>
+    </style>
+
+    <style name="Btn.Operator" parent="Btn.Base">
+        <item name="backgroundTint">@color/btn_operator</item>
+        <item name="android:textColor">@color/btn_operator_text</item>
+    </style>
+
+</resources>
